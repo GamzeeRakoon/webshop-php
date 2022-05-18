@@ -1,0 +1,151 @@
+@font-face {
+    font-family: DefaultFont;
+    src: url(/fonts/BebasNeue-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: DefaultFont;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100vw;
+    padding: 10px 30px;
+    background-color: white;
+    justify-content: space-between;
+    height: 93px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul img {
+    width: 200px;
+}
+
+nav a {
+    font-size: 13px;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    vertical-align: -25;
+}
+
+nav i {
+    size: 100px;
+    padding: 15px;
+    color: black;
+    vertical-align: -25;
+}
+
+nav a:hover {
+    color: #6A0DAD;
+}
+
+.div-top {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: black;
+    padding-top: 10px;
+    font-size: 14px;
+    height: 38px;
+}
+
+.div-top-text {
+    color: white;
+    font-weight: 700;
+}
+
+.div-top-icon {
+    display: flex;
+    color: gray;
+    justify-content: space-evenly;
+}
+
+.main-image-size {
+    width: 100vw;
+    object-fit: cover;
+}
+
+.top-background-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: white;
+    padding: 75px 20px 0px;
+    grid-gap: 20px;
+
+}
+
+.top-background-item {
+    height: 650px;
+}
+
+.image-first {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 0px;
+}
+
+.title {
+    text-align: center;
+    padding: 50px 0;
+    font-size: 39px;
+}
+
+.category-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    background-color: white;
+    grid-column-gap: 20px;
+}
+
+.category-item {
+    cursor: pointer;
+    height: 500px;
+
+}
+
+
+.center {
+    justify-content: center;
+    text-align: center;
+}
+
+.padding-vacay {
+    padding: 100px 0px 10px;
+    font-size: 39px;
+}
+
+.padding-vacay2 {
+    padding-bottom: 35px;
+}
+
+.style-button {
+    background-color: white;
+    width: 110px;
+    height: 40px;
+    border: 1px solid #c6bbce;
+    letter-spacing: 5px;
+}
+
+.style-button:hover {
+    cursor: pointer;
+}
+
+.hero__media-container {
+
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
