@@ -20,11 +20,9 @@ $naam = "yake bigu"
 <body>
 <header>
     <div class="div-top">
-        <i class="fa-solid fa-angle-left div-top-icon fa-2x"></i>
         <a class="div-top-text">
             <?= $slogan ?>
         </a>
-        <i class="fa-solid fa-angle-right div-top-icon fa-2x"></i>
     </div>
     <nav>
         <ul class="thing-thing">
@@ -46,29 +44,28 @@ $naam = "yake bigu"
 
 <main>
     <div class="yeek">
-        <h1 class="title-category">SHOP BY CATEGORY</h1>
+        <h1 class="title-category">Track Tops</h1>
         <div class="center">
-            <div class="category-container">
-                <div class="category-item__container">
-                    <a href="tops.php" ><img class="category-item__image" src="//cdn.shopify.com/s/files/1/0534/0551/5937/products/MAY_PDP_800x1200_4_1080x.jpg?v=1651500318" alt=""></a>
+            <div class="list-container">
+                <div class="list-item__container">
+                    <a><img class="list-item__image" src="//cdn.shopify.com/s/files/1/0534/0551/5937/products/MAY_PDP_800x1200_4_1080x.jpg?v=1651500318" alt=""></a>
+                    <p class="list-item__text">Short Sleeve Big Bling Velour Track Jacket&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$89.0</p>
                 </div>
-                <div class="category-item__container">
-                    <a href="bottoms.php"><img class="category-item__image" src="//cdn.shopify.com/s/files/1/0534/0551/5937/products/MAY_PDP_800x1200_5_5ee915f6-5c89-4526-953f-717a6aa72205_1080x.jpg?v=1651500382" alt=""></a>
-                </div><div class="category-item__container">
-                    <a href="dress.php"><img href="" class="category-item__image" src="//cdn.shopify.com/s/files/1/0534/0551/5937/products/J2UDY459_PUSHPOP_1_1080x.jpg?v=1650050147" alt=""></a>
-                </div><div class="category-item__container">
-                    <a href="shorts.php"><img href="" class="category-item__image" src="//cdn.shopify.com/s/files/1/0534/0551/5937/products/J2UBV452_TINT_OF_MINT_1_1080x.jpg?v=1650046309" alt=""></a>
+                <div class="list-item__container">
+                    <a><img class="list-item__image" src="https://cdn.shopify.com/s/files/1/0534/0551/5937/products/MAY_PDP_800x1200_10_600x.jpg?v=1651500572" alt=""></a>
+                    <p class="list-item__text">Monogram Cropped Velour Hoodie&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$125.00</p>
+                </div><div class="list-item__container">
+                    <a><img class="list-item__image" src="https://cdn.shopify.com/s/files/1/0534/0551/5937/products/MAY_PDP_800x1200_6_753c5ba8-a763-4fa8-9456-c6cd60e83b9c_600x.jpg?v=1652390631" alt=""></a>
+                    <p class="list-item__text">Colorblock Ring Velour Crop Top&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$49.00</p>
+                </div><div class="list-item__container">
+                    <a><img href="" class="list-item__image" src="https://cdn.shopify.com/s/files/1/0534/0551/5937/products/800x1200_7_218f19e6-a61f-46b9-a529-eb75cacd442d_600x.jpg?v=1648587308" alt=""></a>
+                    <p class="list-item__text">Mockneck Velour Track Jacket&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$109.00</p>
                 </div>
                 <!--                    <img class="category-item" src="//cdn.shopify.com/s/files/1/0534/0551/5937/products/MAY_PDP_800x1200_5_5ee915f6-5c89-4526-953f-717a6aa72205_1080x.jpg?v=1651500382">-->
                 <!--                    <img class="category-item" src="//cdn.shopify.com/s/files/1/0534/0551/5937/products/J2UDY459_PUSHPOP_1_1080x.jpg?v=1650050147">-->
                 <!--                    <img class="category-item" src="//cdn.shopify.com/s/files/1/0534/0551/5937/products/J2UBV452_TINT_OF_MINT_1_1080x.jpg?v=1650046309">-->
             </div>
         </div>
-    </div>
-
-
-    <div class="hero__media-container">
-        <iframe id="YouTubeVideo-162126310036d97d8b" class="video-div video-thing" data-type="youtube" data-video-id="pkuKoxbsL2Q" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" src="https://www.youtube.com/embed/pkuKoxbsL2Q?autohide=0&amp;cc_load_policy=0&amp;controls=0&amp;fs=0&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;rel=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fjuicycouture.com&amp;widgetid=1" tabindex="-1" width="1920" height="1080"></iframe>
     </div>
 </main>
 </body>

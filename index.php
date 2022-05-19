@@ -20,11 +20,9 @@ $naam = "yake bigu"
 <body>
     <header>
         <div class="div-top">
-        <i class="fa-solid fa-angle-left div-top-icon fa-2x"></i>
             <a class="div-top-text">
                 <?= $slogan ?>
             </a>
-            <i class="fa-solid fa-angle-right div-top-icon fa-2x"></i>
         </div>
         <nav>
             <ul class="thing-thing">
