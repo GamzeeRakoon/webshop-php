@@ -1,5 +1,5 @@
 <?php
-$slogan = "yeetus deltus";
+$slogan = "Velvet is the new denim";
 $naam = "yake bigu"
 
 ?>
@@ -28,12 +28,11 @@ $naam = "yake bigu"
         </div>
         <nav>
             <ul class="thing-thing">
-                <img src="img/186369.svg" alt="">
-                <li><a href="#lamd">NEW</a></li>
-                <li><a href="#about">TRACK</a></li>
-                <li><a href="#project">APPAREL</a></li>
-                <li><a href="#contact">LUGGAGE</a></li>
-                <li><a href="#contact">SALE</a></li>
+                <a href="index.php"><img src="img/186369.svg" alt=""></a>
+                <li><a href="tops.php">TOPS</a></li>
+                <li><a href="bottoms.php">BOTTOM</a></li>
+                <li><a href="dress.php">DRESS</a></li>
+                <li><a href="shorts.php">SHORTS</a></li>
             </ul>
             <div>
                 <ul>
@@ -62,17 +61,30 @@ $naam = "yake bigu"
             <h1 class="title">SHOP BY CATEGORY</h1>
             <div class="center">
                 <div class="category-container">
-                    <img class="category-item" src="//cdn.shopify.com/s/files/1/0534/0551/5937/products/MAY_PDP_800x1200_4_1080x.jpg?v=1651500318">
-                    <img class="category-item" src="//cdn.shopify.com/s/files/1/0534/0551/5937/products/MAY_PDP_800x1200_5_5ee915f6-5c89-4526-953f-717a6aa72205_1080x.jpg?v=1651500382">
-                    <img class="category-item" src="//cdn.shopify.com/s/files/1/0534/0551/5937/products/J2UDY459_PUSHPOP_1_1080x.jpg?v=1650050147">
-                    <img class="category-item" src="//cdn.shopify.com/s/files/1/0534/0551/5937/products/J2UBV452_TINT_OF_MINT_1_1080x.jpg?v=1650046309">
+                    <div class="category-item__container">
+                        <a href="tops.php" ><img class="category-item__image" src="//cdn.shopify.com/s/files/1/0534/0551/5937/products/MAY_PDP_800x1200_4_1080x.jpg?v=1651500318"></a>
+                        <p class="category-item__text top">TRACK TOPS</p>
+                    </div>
+                    <div class="category-item__container">
+                        <a href="bottoms.php"><img class="category-item__image" src="//cdn.shopify.com/s/files/1/0534/0551/5937/products/MAY_PDP_800x1200_5_5ee915f6-5c89-4526-953f-717a6aa72205_1080x.jpg?v=1651500382"></a>
+                        <p class="category-item__text bottoms">TRACK BOTTOMS</p>
+                    </div><div class="category-item__container">
+                        <a href="dress.php"><img href="" class="category-item__image" src="//cdn.shopify.com/s/files/1/0534/0551/5937/products/J2UDY459_PUSHPOP_1_1080x.jpg?v=1650050147"></a>
+                        <p class="category-item__text dress">DRESSES & JUMPSUITS</p>
+                    </div><div class="category-item__container">
+                        <a href="shorts.php"><img href="" class="category-item__image" src="//cdn.shopify.com/s/files/1/0534/0551/5937/products/J2UBV452_TINT_OF_MINT_1_1080x.jpg?v=1650046309"></a>
+                        <p class="category-item__text shorts">SHORTS</p>
+                    </div>
+<!--                    <img class="category-item" src="//cdn.shopify.com/s/files/1/0534/0551/5937/products/MAY_PDP_800x1200_5_5ee915f6-5c89-4526-953f-717a6aa72205_1080x.jpg?v=1651500382">-->
+<!--                    <img class="category-item" src="//cdn.shopify.com/s/files/1/0534/0551/5937/products/J2UDY459_PUSHPOP_1_1080x.jpg?v=1650050147">-->
+<!--                    <img class="category-item" src="//cdn.shopify.com/s/files/1/0534/0551/5937/products/J2UBV452_TINT_OF_MINT_1_1080x.jpg?v=1650046309">-->
                 </div>
             </div>
         </div>
 
 
         <div class="hero__media-container">     
-        <iframe id="YouTubeVideo-162126310036d97d8b" class="video-div" data-type="youtube" data-video-id="pkuKoxbsL2Q" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" src="https://www.youtube.com/embed/pkuKoxbsL2Q?autohide=0&amp;cc_load_policy=0&amp;controls=0&amp;fs=0&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;rel=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fjuicycouture.com&amp;widgetid=1" tabindex="-1" width="1280" height="720" frameborder="0"></iframe>
+        <iframe id="YouTubeVideo-162126310036d97d8b" class="video-div video-thing" data-type="youtube" data-video-id="pkuKoxbsL2Q" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" src="https://www.youtube.com/embed/pkuKoxbsL2Q?autohide=0&amp;cc_load_policy=0&amp;controls=0&amp;fs=0&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;rel=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fjuicycouture.com&amp;widgetid=1" tabindex="-1" width="1920" height="1080" frameborder="0"></iframe>
         </div>
     </main>
 </body>
