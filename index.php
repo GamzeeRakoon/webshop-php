@@ -1,46 +1,10 @@
 <?php
 $slogan = "Velvet is the new denim";
-$naam = "yake bigu"
-
 ?>
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juicy Couture® Official Site</title>
-
-    <script src="https://kit.fontawesome.com/ad4c693861.js" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/x-icon" href="img/favicon_32x32.webp">
-
-</head>
-<body>
-    <header>
-        <div class="div-top">
-            <a class="div-top-text">
-                <?= $slogan ?>
-            </a>
-        </div>
-        <nav>
-            <ul class="thing-thing">
-                <a href="index.php"><img src="img/186369.svg" alt=""></a>
-                <li><a href="tops.php">TOPS</a></li>
-                <li><a href="bottoms.php">BOTTOM</a></li>
-                <li><a href="dress.php">DRESS</a></li>
-                <li><a href="shorts.php">SHORTS</a></li>
-            </ul>
-            <div>
-                <ul>
-                    <li><i class="fa-regular fa-user"></i></li>
-                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
-                    <li><i class="fa-solid fa-bag-shopping"></i></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+<?php
+require "navbar.php"
+?>
 
     <main>
         <div>
@@ -61,17 +25,17 @@ $naam = "yake bigu"
                 <div class="category-container">
                     <div class="category-item__container">
                         <a href="tops.php" ><img class="category-item__image" src="//cdn.shopify.com/s/files/1/0534/0551/5937/products/MAY_PDP_800x1200_4_1080x.jpg?v=1651500318"></a>
-                        <p class="category-item__text top">TRACK TOPS</p>
+                        <a class="category-item__text top" href="tops.php"><p>TRACK TOPS</p></a>
                     </div>
                     <div class="category-item__container">
                         <a href="bottoms.php"><img class="category-item__image" src="//cdn.shopify.com/s/files/1/0534/0551/5937/products/MAY_PDP_800x1200_5_5ee915f6-5c89-4526-953f-717a6aa72205_1080x.jpg?v=1651500382"></a>
-                        <p class="category-item__text bottoms">TRACK BOTTOMS</p>
+                        <a class="category-item__text bottoms" href="bottoms.php"><p>TRACK BOTTOMS</p></a>
                     </div><div class="category-item__container">
                         <a href="dress.php"><img href="" class="category-item__image" src="//cdn.shopify.com/s/files/1/0534/0551/5937/products/J2UDY459_PUSHPOP_1_1080x.jpg?v=1650050147"></a>
-                        <p class="category-item__text dress">DRESSES & JUMPSUITS</p>
+                        <a class="category-item__text dress" href="dress.php"><p>DRESSES & JUMPSUITS</p></a>
                     </div><div class="category-item__container">
                         <a href="shorts.php"><img href="" class="category-item__image" src="//cdn.shopify.com/s/files/1/0534/0551/5937/products/J2UBV452_TINT_OF_MINT_1_1080x.jpg?v=1650046309"></a>
-                        <p class="category-item__text shorts">SHORTS</p>
+                        <a class="category-item__text shorts" href="shorts.php"><p >SHORTS</p></a>
                     </div>
 <!--                    <img class="category-item" src="//cdn.shopify.com/s/files/1/0534/0551/5937/products/MAY_PDP_800x1200_5_5ee915f6-5c89-4526-953f-717a6aa72205_1080x.jpg?v=1651500382">-->
 <!--                    <img class="category-item" src="//cdn.shopify.com/s/files/1/0534/0551/5937/products/J2UDY459_PUSHPOP_1_1080x.jpg?v=1650050147">-->

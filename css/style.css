@@ -8,6 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: EpicFont, sans-serif;
+    scrollbar-width: none;
 }
 
 nav {
@@ -47,7 +48,7 @@ nav i {
 }
 
 nav a:hover {
-    color: #6A0DAD;
+    color: grey;
 }
 
 .div-top {
@@ -195,7 +196,8 @@ nav a:hover {
     padding-top: 4%;
     z-index: 1;
     text-align: center;
-
+    text-decoration: none;
+    color: black;
 }
 
 .top {
@@ -282,4 +284,8 @@ nav a:hover {
 
 .price {
     text-align: right;
+}
+
+.cart-icon:hover {
+    cursor: pointer;
 }
