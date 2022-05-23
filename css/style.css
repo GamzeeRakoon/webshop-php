@@ -180,7 +180,7 @@ nav a:hover {
 .list-item__text {
     position: relative;
     width: 100%;
-    top: 53%;
+    top: 55%;
     z-index: 1;
     text-align: left;
 }
@@ -288,4 +288,13 @@ nav a:hover {
 
 .cart-icon:hover {
     cursor: pointer;
+}
+
+.line {
+    text-decoration: line-through;
+}
+
+.deal {
+    color: red;
+    font-weight: 500;
 }
