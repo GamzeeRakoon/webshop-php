@@ -1,4 +1,5 @@
 <?php
+require "functions.php";
 $slogan = "Velvet is the new denim";
 $counter = 0;
 $discount = 0;
@@ -38,34 +39,13 @@ require "navbar.php"
         <div class="center">
             <div class="list-container">
 
-                <div class="list-item__container">
-                    <a><img class="list-item__image" src="https://cdn.shopify.com/s/files/1/0534/0551/5937/products/625x937_6_600x.jpg?v=1644520803" alt=""></a>
-                    <p class="list-item__text"> <?= $shop[0][0] ?> </p>
-                    <p class="list-item__text">$<a class="line"><?= $shop[0][1] ?></a> <a class="deal">$<?= $new_price1?></a> </p>
-                    <p class="list-item__text"> Stock:  <?= $shop[0][2] ?> </p>
+                <?php
+                discountContainer("https://cdn.shopify.com/s/files/1/0534/0551/5937/products/625x937_6_600x.jpg?v=1644520803", $shop[0][0], $shop[0][1], $new_price1, $shop[0][2]);
+                itemContainer("https://cdn.shopify.com/s/files/1/0534/0551/5937/products/JC336-SHRT_Pink_1_600x.jpg?v=1651164410" , $shop[1][0], $shop[1][1], $shop[1][2]);
+                discountContainer("https://cdn.shopify.com/s/files/1/0534/0551/5937/products/J2SBVA56_LIQUORICE_3_600x.jpg?v=1646781450", $shop[2][0], $shop[2][1], $new_price2, $shop[2][2]);
+                itemContainer("https://cdn.shopify.com/s/files/1/0534/0551/5937/products/J2SBV356_FIRSTPLACE_1_600x.jpg?v=1646761575", $shop[3][0], $shop[3][1], $shop[3][2]);
+                ?>
 
-                </div>
-
-                <div class="list-item__container">
-                    <a><img class="list-item__image" src="https://cdn.shopify.com/s/files/1/0534/0551/5937/products/JC336-SHRT_Pink_1_600x.jpg?v=1651164410" alt=""></a>
-                    <p class="list-item__text"> <?= $shop[1][0] ?> </p>
-                    <p class="list-item__text">$<?= $shop[1][1] ?> </p>
-                    <p class="list-item__text">  Stock: <?= $shop[1][2] ?> </p>
-                </div>
-
-                <div class="list-item__container">
-                    <a><img class="list-item__image" src="https://cdn.shopify.com/s/files/1/0534/0551/5937/products/J2SBVA56_LIQUORICE_3_600x.jpg?v=1646781450" alt=""></a>
-                    <p class="list-item__text"> <?= $shop[2][0] ?> </p>
-                    <p class="list-item__text">$<a class="line"><?= $shop[2][1] ?></a> <a class="deal">$<?= $new_price2 ?></a> </p>
-                    <p class="list-item__text"> Stock:  <?= $shop[2][2] ?> </p>
-                </div>
-
-                <div class="list-item__container">
-                    <a><img href="" class="list-item__image" src="https://cdn.shopify.com/s/files/1/0534/0551/5937/products/J2SBV356_FIRSTPLACE_1_600x.jpg?v=1646761575" alt=""></a>
-                    <p class="list-item__text"> <?= $shop[3][0] ?> </p>
-                    <p class="list-item__text">$<?= $shop[3][1] ?> </p>
-                    <p class="list-item__text"> Stock:  <?= $shop[3][2] ?> </p>
-                </div>
             </div>
         </div>
     </div>

@@ -1,4 +1,5 @@
 <?php
+require "functions.php";
 $slogan = "Velvet is the new denim";
 $counter = 0;
 
@@ -36,33 +37,13 @@ require "navbar.php"
         <div class="center">
             <div class="list-container">
 
-                <div class="list-item__container">
-                    <a><img class="list-item__image" src="https://cdn.shopify.com/s/files/1/0534/0551/5937/products/MAY_PDP_800x1200_5_5ee915f6-5c89-4526-953f-717a6aa72205_600x.jpg?v=1651500391" alt=""></a>
-                    <p class="list-item__text"> <?= $shop[0][0] ?> </p>
-                    <p class="list-item__text">$<?= $shop[0][1]?> </p>
-                    <p class="list-item__text"> Stock: <?= $shop[0][2] ?> </p>
-                </div>
+                <?php
+                itemContainer("https://cdn.shopify.com/s/files/1/0534/0551/5937/products/MAY_PDP_800x1200_5_5ee915f6-5c89-4526-953f-717a6aa72205_600x.jpg?v=1651500391", $shop[0][0], $shop[0][1], $shop[0][2]);
+                discountContainer("https://cdn.shopify.com/s/files/1/0534/0551/5937/products/J1FBVE04W_LIQUORICE_3_600x.jpg?v=1628778530", $shop[1][0], $shop[1][1], $new_price, $shop[1][2]);
+                itemContainer("https://cdn.shopify.com/s/files/1/0534/0551/5937/products/MAY_PDP_800x1200_11_600x.jpg?v=1651500610", $shop[2][0], $shop[2][1], $shop[2][2]);
+                itemContainer("https://cdn.shopify.com/s/files/1/0534/0551/5937/products/J2SBV354_FREELOVE_2_600x.jpg?v=1647969116", $shop[3][0], $shop[3][1], $shop[3][2]);
+                ?>
 
-                <div class="list-item__container">
-                    <a><img class="list-item__image" src="https://cdn.shopify.com/s/files/1/0534/0551/5937/products/J1FBVE04W_LIQUORICE_3_600x.jpg?v=1628778530" alt=""></a>
-                    <p class="list-item__text"> <?= $shop[1][0] ?> </p>
-                    <p class="list-item__text"> <a class="line">$<?= $shop[1][1] ?></a> <a class="deal">$<?= $new_price?></a> </p>
-                    <p class="list-item__text"> Stock: <?= $shop[1][2] ?> </p>
-                </div>
-
-                <div class="list-item__container">
-                    <a><img class="list-item__image" src="https://cdn.shopify.com/s/files/1/0534/0551/5937/products/MAY_PDP_800x1200_11_600x.jpg?v=1651500610" alt=""></a>
-                    <p class="list-item__text"> <?= $shop[2][0] ?> </p>
-                    <p class="list-item__text">$<?= $shop[2][1] ?> </p>
-                    <p class="list-item__text"> Stock: <?= $shop[2][2] ?> </p>
-                </div>
-
-                <div class="list-item__container">
-                    <a><img href="" class="list-item__image" src="https://cdn.shopify.com/s/files/1/0534/0551/5937/products/J2SBV354_FREELOVE_2_600x.jpg?v=1647969116" alt=""></a>
-                    <p class="list-item__text"> <?= $shop[3][0] ?> </p>
-                    <p class="list-item__text">$<a><?= $shop[3][1] ?></a></p>
-                    <p class="list-item__text"> Stock: <?= $shop[3][2] ?> </p>
-                </div>
             </div>
         </div>
     </div>
