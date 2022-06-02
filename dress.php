@@ -10,21 +10,11 @@ $shop = array(
     array("Small Bling Sleeveless Velour Jumpsuit", 119.00, 421)
 );
 
-while ($counter < 4) {
-    switch ($shop[$counter][2]) {
-        case ($shop[$counter][2] < 0):
-            $shop[$counter][2] = "Not in stock";
-            break;
-        case ($shop[$counter][2] < 500):
-            $shop[$counter][2] = "Barely in stock";
-            break;
-        case ($shop[$counter][2] > 500):
-            $shop[$counter][2] = "Allot in stock";
-    };
-    $counter++;
-}
+$shop = loop($shop);
 
-$new_price = $shop[3][1] - (30 / 100 * $shop[3][1]);
+$new_price = discount($shop, 3);
+
+
 ?>
 
 <?php

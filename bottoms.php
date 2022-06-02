@@ -1,7 +1,7 @@
 <?php
 require "functions.php";
 $slogan = "Velvet is the new denim";
-$counter = 0;
+
 
 $shop = array (
     array("Big Bling Velour Track Shorts", 79.00, 532),
@@ -10,23 +10,11 @@ $shop = array (
     array("Bling Velour Skirt", 79.00, 103)
 );
 
-while ($counter < 4) {
-    switch ($shop[$counter][2]) {
-        case ($shop[$counter][2] < 0):
-            $shop[$counter][2] = "Not in stock";
-            break;
-        case ($shop[$counter][2] < 500):
-            $shop[$counter][2] = "Barely in stock";
-            break;
-        case ($shop[$counter][2] > 500):
-            $shop[$counter][2] = "Allot in stock";
-    };
-    $counter++;
-}
+$shop = loop($shop);
 
-$new_price = $shop[1][1] - (30 / 100 * $shop[1][1]);
+$new_price = discount($shop, 1);
+
 ?>
-
 <?php
 require "navbar.php"
 ?>
