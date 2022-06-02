@@ -1,7 +1,5 @@
 <?php
 require "functions.php";
-$slogan = "Velvet is the new denim";
-
 
 $shop = array (
     array("Big Bling Velour Track Shorts", 79.00, 532),
@@ -14,9 +12,6 @@ $shop = loop($shop);
 
 $new_price = discount($shop, 1);
 
-?>
-<?php
-require "navbar.php"
 ?>
 
 <main>

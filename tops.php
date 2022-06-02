@@ -1,7 +1,5 @@
 <?php
 require "functions.php";
-$slogan = "Velvet is the new denim";
-$counter = 0;
 
 $shop = array(
     array("Short Sleeve Big Bling Velour Track Jacket", 89.00, 532),
@@ -13,10 +11,6 @@ $shop = array(
 $shop = loop($shop);
 
 $new_price = discount($shop, 0);
-?>
-
-<?php
-require "navbar.php"
 ?>
 
 <main>

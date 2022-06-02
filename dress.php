@@ -1,7 +1,5 @@
 <?php
 require "functions.php";
-$slogan = "Velvet is the new denim";
-$counter = 0;
 
 $shop = array(
     array("Big Bling Terry Halter Dress", 79.00, 452),
@@ -15,10 +13,6 @@ $shop = loop($shop);
 $new_price = discount($shop, 3);
 
 
-?>
-
-<?php
-require "navbar.php"
 ?>
 
 <main>

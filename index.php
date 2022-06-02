@@ -1,9 +1,5 @@
 <?php
-$slogan = "Velvet is the new denim";
-?>
-
-<?php
-require "navbar.php"
+require "functions.php"
 ?>
 
     <main>
@@ -23,23 +19,13 @@ require "navbar.php"
             <h1 class="title">SHOP BY CATEGORY</h1>
             <div class="center">
                 <div class="category-container">
-                    <div class="category-item__container">
-                        <a href="tops.php" ><img class="category-item__image" src="//cdn.shopify.com/s/files/1/0534/0551/5937/products/MAY_PDP_800x1200_4_1080x.jpg?v=1651500318"></a>
-                        <a class="category-item__text top" href="tops.php"><p>TRACK TOPS</p></a>
-                    </div>
-                    <div class="category-item__container">
-                        <a href="bottoms.php"><img class="category-item__image" src="//cdn.shopify.com/s/files/1/0534/0551/5937/products/MAY_PDP_800x1200_5_5ee915f6-5c89-4526-953f-717a6aa72205_1080x.jpg?v=1651500382"></a>
-                        <a class="category-item__text bottoms" href="bottoms.php"><p>TRACK BOTTOMS</p></a>
-                    </div><div class="category-item__container">
-                        <a href="dress.php"><img href="" class="category-item__image" src="//cdn.shopify.com/s/files/1/0534/0551/5937/products/J2UDY459_PUSHPOP_1_1080x.jpg?v=1650050147"></a>
-                        <a class="category-item__text dress" href="dress.php"><p>DRESSES & JUMPSUITS</p></a>
-                    </div><div class="category-item__container">
-                        <a href="shorts.php"><img href="" class="category-item__image" src="//cdn.shopify.com/s/files/1/0534/0551/5937/products/J2UBV452_TINT_OF_MINT_1_1080x.jpg?v=1650046309"></a>
-                        <a class="category-item__text shorts" href="shorts.php"><p >SHORTS</p></a>
-                    </div>
-<!--                    <img class="category-item" src="//cdn.shopify.com/s/files/1/0534/0551/5937/products/MAY_PDP_800x1200_5_5ee915f6-5c89-4526-953f-717a6aa72205_1080x.jpg?v=1651500382">-->
-<!--                    <img class="category-item" src="//cdn.shopify.com/s/files/1/0534/0551/5937/products/J2UDY459_PUSHPOP_1_1080x.jpg?v=1650050147">-->
-<!--                    <img class="category-item" src="//cdn.shopify.com/s/files/1/0534/0551/5937/products/J2UBV452_TINT_OF_MINT_1_1080x.jpg?v=1650046309">-->
+
+                    <?php
+                        indexContainer('tops.php', '//cdn.shopify.com/s/files/1/0534/0551/5937/products/MAY_PDP_800x1200_4_1080x.jpg?v=1651500318');
+                        indexContainer('bottoms.php', '//cdn.shopify.com/s/files/1/0534/0551/5937/products/MAY_PDP_800x1200_5_5ee915f6-5c89-4526-953f-717a6aa72205_1080x.jpg?v=1651500382');
+                        indexContainer('dress.php', '//cdn.shopify.com/s/files/1/0534/0551/5937/products/J2UDY459_PUSHPOP_1_1080x.jpg?v=1650050147');
+                        indexContainer('shorts.php', '//cdn.shopify.com/s/files/1/0534/0551/5937/products/J2UBV452_TINT_OF_MINT_1_1080x.jpg?v=1650046309');
+                    ?>
                 </div>
             </div>
         </div>
