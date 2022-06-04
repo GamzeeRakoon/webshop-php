@@ -1,10 +1,10 @@
 <?php
 $slogan = "Velvet is the new denim";
 
-function indexContainer($page, $src) {
+function indexContainer($page, $src, $name, $css) {
     echo           "<div class='category-item__container'>
                         <a href='$page' ><img class='category-item__image' src='$src'></a>
-                        <a class='category-item__text top' href='$page'><p>TRACK TOPS</p></a>
+                        <a class='category-item__text $css' href='$page'><p>$name</p></a>
                     </div>";
 };
 
