@@ -1,10 +1,10 @@
 <?php
 $slogan = "Velvet is the new denim";
 
-function indexContainer($page, $src) {
+function indexContainer($page, $src, $name, $css) {
     echo           "<div class='category-item__container'>
                         <a href='$page' ><img class='category-item__image' src='$src'></a>
-                        <a class='category-item__text top' href='$page'><p>TRACK TOPS</p></a>
+                        <a class='category-item__text $css' href='$page'><p>$name</p></a>
                     </div>";
 };
 
@@ -26,22 +26,22 @@ function itemContainer($src, $item, $price, $stock){
                 </div>";
 };
 
-function loop($shop){
+function loop($array){
     $counter = 0;
     while ($counter < 4) {
-        switch ($shop[$counter][2]) {
-            case ($shop[$counter][2] < 0):
-                $shop[$counter][2] = "Not in stock";
+        switch ($array[$counter][2]) {
+            case ($array[$counter][2] < 0):
+                $array[$counter][2] = "Not in stock";
                 break;
-            case ($shop[$counter][2] < 500):
-                $shop[$counter][2] = "Barely in stock";
+            case ($array[$counter][2] < 500):
+                $array[$counter][2] = "Barely in stock";
                 break;
-            case ($shop[$counter][2] > 500):
-                $shop[$counter][2] = "Allot in stock";
+            case ($array[$counter][2] > 500):
+                $array[$counter][2] = "Allot in stock";
         };
         $counter++;
     }
-    return $shop;
+    return $array;
 }
 
 function discount($new_discount,  $product_number) {
