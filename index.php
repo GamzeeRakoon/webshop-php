@@ -19,7 +19,6 @@ require "functions.php"
             <h1 class="title">SHOP BY CATEGORY</h1>
             <div class="center">
                 <div class="category-container">
-
                     <?php
                         indexContainer('clothes.php?type=tops', '//cdn.shopify.com/s/files/1/0534/0551/5937/products/MAY_PDP_800x1200_4_1080x.jpg?v=1651500318', 'Track Tops', 'top');
                         indexContainer('clothes.php?type=bottoms', '//cdn.shopify.com/s/files/1/0534/0551/5937/products/MAY_PDP_800x1200_5_5ee915f6-5c89-4526-953f-717a6aa72205_1080x.jpg?v=1651500382', 'Track Bottoms','bottoms');
