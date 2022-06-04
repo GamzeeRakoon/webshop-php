@@ -76,10 +76,10 @@ function discount($new_discount,  $product_number) {
     <nav>
         <ul class="thing-thing">
             <a href="index.php"><img src="img/186369.svg" alt=""></a>
-            <li><a href="tops.php">TOPS</a></li>
-            <li><a href="bottoms.php">BOTTOM</a></li>
-            <li><a href="dress.php">DRESS</a></li>
-            <li><a href="shorts.php">SHORTS</a></li>
+            <li><a href="clothes.php?type=tops">TOPS</a></li>
+            <li><a href="clothes.php?type=bottoms">BOTTOMS</a></li>
+            <li><a href="clothes.php?type=dress">DRESS</a></li>
+            <li><a href="clothes.php?type=shorts">SHORTS</a></li>
         </ul>
         <div>
             <ul>
