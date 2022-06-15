@@ -26,27 +26,27 @@ function itemContainer($src, $item, $price, $stock){
                 </div>";
 };
 
-function loop($shop){
+function loop($item){
     $counter = 0;
     while ($counter < 4) {
-        switch ($shop[$counter][2]) {
-            case ($shop[$counter][2] < 0):
-                $shop[$counter][2] = "Not in stock";
+        switch ($item[$counter][4]) {
+            case ($item[$counter][4] < 0):
+                $item[$counter][4] = "Not in stock";
                 break;
-            case ($shop[$counter][2] < 500):
-                $shop[$counter][2] = "Barely in stock";
+            case ($item[$counter][4] < 500):
+                $item[$counter][4] = "Barely in stock";
                 break;
-            case ($shop[$counter][2] > 500):
-                $shop[$counter][2] = "Allot in stock";
+            case ($item[$counter][4] > 500):
+                $item[$counter][4] = "Allot in stock";
         };
         $counter++;
     }
-    return $shop;
+    return $item;
 }
 
 function discount($new_discount,  $product_number) {
 
-    $new_price = $new_discount[$product_number][1] - (30 / 100 * $new_discount[$product_number][1]);
+    $new_price = $new_discount[$product_number][3] - (30 / 100 * $new_discount[$product_number][3]);
     return number_format($new_price, 2, ',','');
 }
 
